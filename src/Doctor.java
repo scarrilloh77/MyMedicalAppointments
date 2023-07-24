@@ -1,38 +1,20 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    static int id = 0; // Autoincrement cause is static
-    private String name;
-    private String email;
+public class Doctor extends User {
     private String specialty;
 
+    Doctor(String name, String email) {
+        super(name, email);
+    }
 
-    // Constructor
+    public String getSpecialty() {
+        return specialty;
+    }
 
-//    Doctor(){
-//        System.out.println("Construyendo el Object Doctor");
-//    }
-
-
-    Doctor(String name, String specialty) {
-        System.out.println("El nombre del Doctor asignado es: " + name);
-        id++;
-        this.name = name;
+    public void setSpecialty(String specialty) {
         this.specialty = specialty;
     }
-
-
-    // Comportamientos
-    public void showName() {
-        System.out.println(name);
-    }
-
-    public void showId() {
-        System.out.println("ID Doctor: " + id); // I dont call like Doctor.id cause is 'static '
-
-    }
-
 
     // Available Appointment
     public static class AvailableAppointment {
@@ -78,7 +60,7 @@ public class Doctor {
         availableAppointments.add(new Doctor.AvailableAppointment(date, time));
     }
 
-    public ArrayList<AvailableAppointment> getAvailableAppointments(){
+    public ArrayList<AvailableAppointment> getAvailableAppointments() {
         return availableAppointments;
     }
 }
