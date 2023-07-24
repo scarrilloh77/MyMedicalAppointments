@@ -49,4 +49,10 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    @Override // It's not property of User class, cause if a method of Parent class.
+    public String toString() {
+        return "User: " + name + ", Email: " + email +
+                "\nAddress: " + address + ". Phone: " + phoneNumber;
+    }
 }

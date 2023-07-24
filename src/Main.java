@@ -78,5 +78,9 @@ public class Main {
         for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
+
+        // --------------------------------------------------------------------------
+        Patient patient = new Patient("Carlos Carrera", "ccarrera@test.com");
+        System.out.println(patient);
     }
 }
