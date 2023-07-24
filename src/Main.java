@@ -22,5 +22,15 @@ public class Main {
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.specialty);
 
+        Patient myPatient = new Patient("Oscar Cordoba", "ocordoba@test.com");
+//        System.out.println(myPatient.name);
+//        System.out.println(myPatient.email);
+
+        // INCONSITENCE PROBLEM (WE NEED ENCAPSULATION).
+//        myPatient.weight = 70.5;
+//        myPatient.height = 1.70;
+        // ... 5 MONTHS LATER...
+//        myPatient.weight = 75.5;
+//        myPatient.name = "Juan"; //What!!!
     }
 }
