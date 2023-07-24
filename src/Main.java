@@ -23,6 +23,13 @@ public class Main {
         System.out.println(myDoctor.specialty);
 
         Patient myPatient = new Patient("Oscar Cordoba", "ocordoba@test.com");
+        myPatient.setWeight(54.6);
+        System.out.println(myPatient.getWeight());
+
+        myPatient.setPhoneNumber("3105982304"); //El número debe ser de 8 dígitos máximo!
+        System.out.println(myPatient.getPhoneNumber()); //null
+        myPatient.setPhoneNumber("31059823");
+        System.out.println(myPatient.getPhoneNumber()); //31059823
 //        System.out.println(myPatient.name);
 //        System.out.println(myPatient.email);
 
