@@ -18,23 +18,46 @@ public class Main {
         */
 
 //        showMenu();
-        Doctor myDoctor = new Doctor("Pedro Sanchez", "Cirgujano");
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.specialty);
+//        Doctor myDoctor = new Doctor("Pedro Sanchez", "Cirgujano"); // OBJECT of TYPE Doctor
+//        System.out.println(myDoctor.name);
+//        System.out.println(myDoctor.specialty);
 
-//        int i = 0; // VARIABLE int de TIPO PRIMITIVO int.
-//        String name = "Ann"; // OBJETO name de TIPO String.
+        // -----------------------------------------------------------
 
-        Patient myPatient = new Patient("Oscar Cordoba", "ocordoba@test.com");
-        myPatient.setWeight(54.6);
-        System.out.println(myPatient.getWeight());
+        // String name = "Ann"; // OBJETO name de TIPO String.
+        int i = 0; // VARIABLE int de TIPO PRIMITIVO int.
+        int b = 2;
+        b = i;
+        // b = 0
 
-        myPatient.setPhoneNumber("3105982304"); //El número debe ser de 8 dígitos máximo!
-        System.out.println(myPatient.getPhoneNumber()); //null
-        myPatient.setPhoneNumber("31059823");
-        System.out.println(myPatient.getPhoneNumber()); //31059823
+        Patient myPatient = new Patient("Maria Gutierrez", "mgutierrez@test.com");
+        Patient myPatient2 = new Patient("Camila Cantillo", "ccantillo@test.com");
+        System.out.println(myPatient.getName()); //Maria Gutierrez
+        System.out.println(myPatient2.getName()); //Camila Cantillo
+        myPatient2 = myPatient;
+        System.out.println(myPatient.getName()); //Maria Gutierrez
+        System.out.println(myPatient2.getName()); //Maria Gutierrez
+        myPatient2.setName("Carla Garcia");
+        System.out.println(myPatient.getName()); //Carla Garcia
+        System.out.println(myPatient2.getName()); //Carla Garcia
+
+        // -----------------------------------------------------------
+
+//        Patient myPatient = new Patient("Oscar Cordoba", "ocordoba@test.com");
+//        myPatient.setWeight(54.6);
+//        System.out.println(myPatient.getWeight());
+//
+//        myPatient.setPhoneNumber("3105982304"); //El número debe ser de 8 dígitos máximo!
+//        System.out.println(myPatient.getPhoneNumber()); //null
+//        myPatient.setPhoneNumber("31059823");
+//        System.out.println(myPatient.getPhoneNumber()); //31059823
+
 //        System.out.println(myPatient.name);
 //        System.out.println(myPatient.email);
+
+        // -------------------------------------------------------------
+
+
 
         // INCONSITENCE PROBLEM (WE NEED ENCAPSULATION).
 //        myPatient.weight = 70.5;
