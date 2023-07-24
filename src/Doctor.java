@@ -5,16 +5,18 @@ public class Doctor {
 
     // Constructor
 
-    Doctor(){
-        System.out.println("Construyendo el Object Doctor");
+//    Doctor(){
+//        System.out.println("Construyendo el Object Doctor");
+//    }
+
+
+    Doctor(String name, String specialty){
+        System.out.println("El nombre del Doctor asignado es: " + name);
         id++;
+        this.name = name;
+        this.specialty = specialty;
     }
 
-    /*
-    Doctor(String name){
-        System.out.println("El nombre del Doctor asignado es: " + name);
-    }
-    */
 
 
     // Comportamientos

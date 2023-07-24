@@ -17,6 +17,10 @@ public class Main {
         System.out.println(Doctor.id);
         */
 
-        showMenu();
+//        showMenu();
+        Doctor myDoctor = new Doctor("Pedro Sanchez", "Cirgujano");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.specialty);
+
     }
 }
