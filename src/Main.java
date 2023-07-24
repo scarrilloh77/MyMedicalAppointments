@@ -22,6 +22,9 @@ public class Main {
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.specialty);
 
+//        int i = 0; // VARIABLE int de TIPO PRIMITIVO int.
+//        String name = "Ann"; // OBJETO name de TIPO String.
+
         Patient myPatient = new Patient("Oscar Cordoba", "ocordoba@test.com");
         myPatient.setWeight(54.6);
         System.out.println(myPatient.getWeight());
