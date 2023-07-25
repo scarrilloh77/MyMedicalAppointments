@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.Patient;
 import model.User;
 
 import java.util.Date;
@@ -70,12 +71,12 @@ public class Main {
 //        myPatient.name = "Juan"; //What!!!
 
         // ---------------------------Nested Classes--------------------------------
-        Doctor myDoctor = new Doctor("Pedro Sanchez", "psanchez@test.com");
-        myDoctor.addAvailableAppointment(new Date(), "2pm");
-        myDoctor.addAvailableAppointment(new Date(), "4pm");
-        myDoctor.addAvailableAppointment(new Date(), "6pm");
+//        Doctor myDoctor = new Doctor("Pedro Sanchez", "psanchez@test.com");
+//        myDoctor.addAvailableAppointment(new Date(), "2pm");
+//        myDoctor.addAvailableAppointment(new Date(), "4pm");
+//        myDoctor.addAvailableAppointment(new Date(), "6pm");
 //        System.out.println(myDoctor.getAvailableAppointments());
-        System.out.println(myDoctor);
+//        System.out.println(myDoctor);
 
 //        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
 //            System.out.println(aA.getDate() + " " + aA.getTime());
@@ -87,5 +88,11 @@ public class Main {
 
         // --------------------------------------------------------------------------
 //        User user = new User(); // 'User' is abstract; cannot be instantiated
+
+        // -------------------------- Abstract Members ------------------------------
+        User user = new Doctor("Pedro Sanchez", "psanchez@test.com"); // Declarado OBJETO User COMO DOCTOR!
+        User user2 = new Patient("Roberto Carrillo", "rcarrillo@test.com"); // Declarado OBJETO User COMO PATIENT!
+        user.showDataUser();
+        user2.showDataUser();
     }
 }
