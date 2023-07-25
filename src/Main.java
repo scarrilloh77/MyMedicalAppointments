@@ -94,5 +94,16 @@ public class Main {
         User user2 = new Patient("Roberto Carrillo", "rcarrillo@test.com"); // Declarado OBJETO User COMO PATIENT!
         user.showDataUser();
         user2.showDataUser();
+
+        // -------------------------- Anonimous Classes------------------------------
+        User user3 = new User("Mateo Espinoza", "mespinoza@test.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamento: Geriatría");
+            }
+        };
+        user3.showDataUser();
     }
 }
