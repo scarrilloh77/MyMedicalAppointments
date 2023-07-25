@@ -1,6 +1,6 @@
-import java.util.Date;
+import model.Doctor;
 
-import static ui.UIMenu.*;
+import java.util.Date;
 
 public class Main {
 
