@@ -69,18 +69,19 @@ public class Main {
 //        myPatient.name = "Juan"; //What!!!
 
         // ---------------------------Nested Classes--------------------------------
-        Doctor myDoctor = new Doctor("Pedro Sanchez", "Cirgujano");
+        Doctor myDoctor = new Doctor("Pedro Sanchez", "psanchez@test.com");
         myDoctor.addAvailableAppointment(new Date(), "2pm");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "6pm");
-        System.out.println(myDoctor.getAvailableAppointments());
+//        System.out.println(myDoctor.getAvailableAppointments());
+        System.out.println(myDoctor);
 
-        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
-            System.out.println(aA.getDate() + " " + aA.getTime());
-        }
+//        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
+//            System.out.println(aA.getDate() + " " + aA.getTime());
+//        }
 
         // --------------------------------------------------------------------------
-        Patient patient = new Patient("Carlos Carrera", "ccarrera@test.com");
-        System.out.println(patient);
+//        Patient patient = new Patient("Carlos Carrera", "ccarrera@test.com");
+//        System.out.println(patient);
     }
 }
