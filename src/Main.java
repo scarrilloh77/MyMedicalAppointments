@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.User;
 
 import java.util.Date;
 
@@ -83,5 +84,8 @@ public class Main {
         // --------------------------------------------------------------------------
 //        Patient patient = new Patient("Carlos Carrera", "ccarrera@test.com");
 //        System.out.println(patient);
+
+        // --------------------------------------------------------------------------
+//        User user = new User(); // 'User' is abstract; cannot be instantiated
     }
 }
